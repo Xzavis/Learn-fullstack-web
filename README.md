@@ -8,7 +8,7 @@ Silabus ini dilengkapi dengan sistem *progress tracking* agar Anda dapat melacak
 
 ## 📊 Progress Keseluruhan (Global Progress)
 **Total Modul Selesai:** 0 / 8
-**Progress:** `[░░░░░░░░░░░░░░░░░░░░] 0%`
+**Progress:** `[█░░░░░░░░░░░░░░░░░░░] 2%`
 
 *(Update manual progress bar di atas sesuai dengan persentase modul yang telah Anda selesaikan. Misalnya: `[██████████░░░░░░░░░░] 50%`)*
 
@@ -16,10 +16,10 @@ Silabus ini dilengkapi dengan sistem *progress tracking* agar Anda dapat melacak
 
 ## 📘 Modul 1: JavaScript & Pemrograman Dasar (Fokus Utama)
 **Referensi:** [Roadmap JavaScript](https://roadmap.sh/javascript) | [W3Schools JS](https://www.w3schools.com/js)
-**Progress Modul 1:** `[░░░░░░░░░░] 0%`
+**Progress Modul 1:** `[█░░░░░░░░] 4.7%`
 
 - [ ] **1.1. Dasar-dasar (Basics)**
-  - [ ] Syntax, Variabel (`var`, `let`, `const`)
+  - [x] Syntax, Variabel (`var`, `let`, `const`)
   - [ ] Tipe Data (String, Number, Boolean, Null, Undefined, Object, Symbol)
   - [ ] Type Casting & Type Conversion
   - [ ] Operator & Statement Kontrol (if-else, switch)
