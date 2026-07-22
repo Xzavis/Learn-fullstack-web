@@ -1,202 +1,277 @@
-# 🚀 Full-Stack Developer Learning Roadmap & Syllabus
+# 🚀 Full-Stack Web Developer Learning Roadmap & Syllabus
 
-Selamat datang di **Roadmap Pembelajaran Full-Stack Developer**! Silabus ini disusun secara spesifik dan komprehensif berdasarkan referensi dari [roadmap.sh](https://roadmap.sh) dan [W3Schools](https://www.w3schools.com).
+Selamat datang di **Roadmap Pembelajaran Full-Stack Web Developer**! Silabus ini disusun secara sistematis menggabungkan standar dari [roadmap.sh](https://roadmap.sh) dengan kurikulum video tutorial dari **[Programmer Zaman Now (PZN)](https://www.youtube.com/@ProgrammerZamanNow)**.
 
-Silabus ini dilengkapi dengan sistem *progress tracking* agar Anda dapat melacak sejauh mana perjalanan belajar Anda. Ubah `[ ]` menjadi `[x]` setiap kali Anda menyelesaikan sebuah topik.
+Silabus ini dilengkapi dengan *Progress Tracking Bar*, tautan langsung ke video playlist PZN, dan daftar periksa (*checkbox*) untuk memantau perkembangan belajar Anda.
 
 ---
 
 ## 📊 Progress Keseluruhan (Global Progress)
-**Total Modul Selesai:** 0 / 8
-**Progress:** `[█░░░░░░░░░░░░░░░░░░░] 3%`
 
-*(Update manual progress bar di atas sesuai dengan persentase modul yang telah Anda selesaikan. Misalnya: `[██████████░░░░░░░░░░] 50%`)*
+**Modul Selesai:** 1 / 7 Modul  
+**Progress Keseluruhan:** `[█░░░░░░░░░] 14.3%`
 
----
-
-## 📘 Modul 1: JavaScript & Pemrograman Dasar (Fokus Utama)
-**Referensi:** [Roadmap JavaScript](https://roadmap.sh/javascript) | [W3Schools JS](https://www.w3schools.com/js)
-**Progress Modul 1:** `[█░░░░░░░░░] 14.3%`
-
-- [ ] **1.1. Dasar-dasar (Basics)**
-  - [x] Syntax, Variabel (`var`, `let`, `const`)
-  - [x] Tipe Data (String, Number, Boolean, Null, Undefined, Object, Symbol)
-  - [x] Type Casting & Type Conversion
-  - [ ] Operator & Statement Kontrol (if-else, switch)
-  - [ ] Looping (for, while, do-while, for-in, for-of)
-  - [ ] Fungsi (Function Declaration, Arrow Function, IIFE)
-- [ ] **1.2. Struktur Data JavaScript**
-  - [ ] Arrays & Array Methods (`map`, `filter`, `reduce`, `find`, dll)
-  - [ ] Objects, Map, Set, WeakMap, WeakSet
-- [ ] **1.3. Manipulasi DOM & Browser (W3Schools)**
-  - [ ] DOM Selection (`getElementById`, `querySelector`)
-  - [ ] DOM Elements (Create, Append, Remove)
-  - [ ] Event Listeners & Event Bubbling/Capturing
-  - [ ] Web Storage (LocalStorage, SessionStorage, Cookies)
-- [ ] **1.4. Asynchronous JavaScript**
-  - [ ] Callbacks & Callback Hell
-  - [ ] Promises (Chaining, `Promise.all`)
-  - [ ] Async / Await
-  - [ ] Event Loop, Microtasks & Macrotasks, Timers (`setTimeout`, `setInterval`)
-- [ ] **1.5. Konsep JavaScript Lanjutan (Advanced)**
-  - [ ] Hoisting & Scope (Lexical Scope, Closures)
-  - [ ] `this` Keyword (Bind, Call, Apply)
-  - [ ] Prototypes & Prototypal Inheritance
-  - [ ] Modules (ES6 Modules `import`/`export`, CommonJS)
-  - [ ] Error Handling (try-catch-finally, Custom Errors)
+*(Update status progress bar di atas secara berkala seiring dengan penyelesaian modul Anda).*
 
 ---
 
-## 🎨 Modul 2: Frontend Development Dasar & Menengah
-**Referensi:** [Frontend Roadmap](https://roadmap.sh/frontend)
+## 🔗 Referensi Sumber Belajar Utama (Programmer Zaman Now)
+
+- 🌐 **Situs Resmi Roadmap PZN:** [programmerzamannow.com](https://programmerzamannow.com)
+- 📺 **Channel YouTube PZN:** [Programmer Zaman Now YouTube](https://www.youtube.com/@ProgrammerZamanNow)
+- 📑 **Daftar Playlist YouTube PZN:** [Programmer Zaman Now Playlists](https://www.youtube.com/@ProgrammerZamanNow/playlists)
+- 🧭 **Standar Industri Web Dev:** [roadmap.sh/full-stack](https://roadmap.sh/full-stack)
+
+---
+
+## 🗺️ Ilustrasi Flowchart Silabus & Dependency Tree
+
+Berikut adalah alur ketergantungan modul belajar (*prerequisite flow*) dari dasar hingga siap mengintegrasikan aplikasi Full-Stack:
+
+```mermaid
+flowchart TD
+    subgraph Phase1["Phase 1: Web & JS Fundamentals (Selesai)"]
+        HTML["HTML5 & CSS3"]
+        JS["JavaScript Core & Async"]
+    end
+
+    subgraph Phase2["Phase 2: Tooling & Runtime Environment"]
+        NODE["Node.js & NPM (PZN)"]
+        VITE["Vite Build Tool (PZN)"]
+        TS["TypeScript Fundamental (PZN)"]
+    end
+
+    subgraph Phase3["Phase 3: Frontend Modern Framework"]
+        REACT["React.js & React Router (PZN)"]
+    end
+
+    subgraph Phase4["Phase 4: Database Layer"]
+        SQL["MySQL / PostgreSQL (PZN)"]
+        NOSQL["MongoDB & Redis (PZN)"]
+    end
+
+    subgraph Phase5["Phase 5: Backend RESTful API"]
+        EXPRESS["Express.js + Prisma ORM (PZN)"]
+        REST["RESTful API & JWT Auth (PZN)"]
+    end
+
+    subgraph Phase6["Phase 6: DevOps & Deployment"]
+        DOCKER["Docker & Docker Compose (PZN)"]
+        NGINX["Nginx & Production Setup (PZN)"]
+    end
+
+    HTML --> NODE
+    JS --> NODE
+    NODE --> VITE
+    NODE --> TS
+    VITE --> REACT
+    TS --> REACT
+    SQL --> EXPRESS
+    NOSQL --> EXPRESS
+    REACT --> REST
+    EXPRESS --> REST
+    REST --> DOCKER
+    DOCKER --> NGINX
+```
+
+---
+
+## 📁 Struktur Folder Repositori Belajar (Rekomendasi Konsisten)
+
+Agar repositori belajar ini tetap rapi dan terorganisir, gunakan struktur folder berikut:
+
+```text
+Learn-fullstack-web/
+├── 01-web-js-fundamentals/      # Project & Latihan HTML, CSS, JS Async (Selesai)
+├── 02-nodejs-npm-vite/          # Latihan Node.js, NPM Scripts, & Setup Vite
+├── 03-typescript/               # Latihan TypeScript Compiler, Interfaces, & Generics
+├── 04-reactjs/                  # Project React Component, Hooks, & React Router
+├── 05-database/                 # Query MySQL, Script MongoDB, & Redis Caching
+├── 06-backend-express-prisma/   # Project RESTful API Express.js + Prisma ORM + Auth
+├── 07-devops-docker-nginx/      # Configuration Dockerfile, Docker Compose, & Nginx
+└── README.md                    # Dokumentasi & Progress Tracking utama
+```
+
+---
+
+## 📘 Modul 1: Web & JavaScript Fundamentals (Status: Selesai)
+**Referensi:** [Roadmap JavaScript](https://roadmap.sh/javascript) | Referensi Kelas Dicoding ([Belajar JS](https://github.com/Xzavis/Belajar-Javascript-Dicoding.git) & [Final Assessment JS](https://github.com/Xzavis/Final-Assessment-JS.git))  
+**Progress Modul 1:** `[██████████] 100%`
+
+- [x] **1.1. HTML5 Fundamentals**
+  - [x] Element Semantik (`header`, `nav`, `main`, `section`, `article`, `footer`)
+  - [x] Form Validation & Input Types
+  - [x] Web Accessibility (a11y) & Basic SEO Tags
+- [x] **1.2. CSS3 & Responsive Layout**
+  - [x] Box Model, Sizing, & Position
+  - [x] Flexbox Layouting & CSS Grid
+  - [x] Responsive Web Design (Media Queries, Mobile-first)
+- [x] **1.3. JavaScript Core Basics**
+  - [x] Syntax, Variabel (`var`, `let`, `const`), & Scope
+  - [x] Tipe Data, Type Casting, & Coercion
+  - [x] Operator, Control Flow (`if-else`, `switch`), & Looping
+  - [x] Function Declaration, Arrow Function, & Higher-Order Function
+  - [x] Data Structures (Array Methods `map`/`filter`/`reduce`, Object, Set, Map)
+- [x] **1.4. Asynchronous JavaScript & DOM**
+  - [x] Manipulasi DOM & Event Listeners
+  - [x] Asynchronous Concepts (Callback, Event Loop)
+  - [x] Promises & `async/await` Syntax
+  - [x] Fetch API & Handling JSON Data
+
+---
+
+## 🛠️ Modul 2: Node.js & Tooling Ecosystem
+**Referensi Roadmap:** [Roadmap Node.js](https://roadmap.sh/nodejs)  
+**Video PZN:** [Playlist Tutorial Node.js Dasar](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+NodeJS+Dasar) | [Playlist Tutorial NPM](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+NodeJS+NPM) | [Video Tutorial Vite](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+Vite)  
+**Prasyarat:** JavaScript Async `[x]`  
 **Progress Modul 2:** `[░░░░░░░░░░] 0%`
 
-- [ ] **2.1. Internet & Web Dasar**
-  - [ ] Cara kerja Internet, HTTP/HTTPS, DNS, Hosting
-- [ ] **2.2. HTML & CSS Lanjutan**
-  - [ ] HTML Semantic, Accessibility (a11y), SEO Basics
-  - [ ] CSS Box Model, Flexbox, Grid Layout
-  - [ ] Responsive Design (Media Queries, Mobile-first)
-  - [ ] CSS Architecture (BEM) & Frameworks (Tailwind CSS)
-- [ ] **2.3. Version Control System (VCS)**
-  - [ ] Git Commands (clone, add, commit, push, pull)
-  - [ ] Git Branching & Merging
-  - [ ] GitHub / GitLab (Pull Requests, Issues)
-- [ ] **2.4. Ekosistem Frontend (Build Tools)**
-  - [ ] Package Managers (npm / yarn / pnpm)
-  - [ ] Module Bundlers & Build Tools (Vite / Webpack)
-- [ ] **2.5. Frontend Framework (React / Vue)**
-  - [ ] Component Lifecycle & State Management
-  - [ ] Routing (React Router / Vue Router)
-  - [ ] Integrasi API di Frontend (Fetch, Axios, React Query)
+- [ ] **2.1. Node.js Core Basics**
+  - [ ] Pengenalan V8 Engine & Architecture Node.js
+  - [ ] Global Objects (`process`, `console`, `Buffer`)
+  - [ ] Module System: CommonJS (`require`) vs ES Modules (`import/export`)
+  - [ ] Core Modules (`fs` File System, `path`, `events`, `os`, `http`)
+- [ ] **2.2. Node Package Manager (NPM)**
+  - [ ] Inisialisasi Project (`npm init`) & File `package.json`
+  - [ ] Local vs Global Package Installation
+  - [ ] Dependency Types (`dependencies` vs `devDependencies`)
+  - [ ] Semantic Versioning (`^`, `~`) & Custom NPM Scripts
+- [ ] **2.3. Build Tool Modern (Vite)**
+  - [ ] Konsep Build Tool & Keunggulan Vite (ESbuild)
+  - [ ] Inisialisasi Project Vite (`npm create vite@latest`)
+  - [ ] Configuration & Environment Variables (`.env`, `import.meta.env`)
+  - [ ] Production Bundling (`vite build`) & Local Server Preview (`vite preview`)
 
 ---
 
-## ⚡ Modul 3: Frontend Performance Best Practices
-**Referensi:** [Frontend Performance](https://roadmap.sh/frontend-performance-best-practices)
+## 🔷 Modul 3: TypeScript Fundamental
+**Referensi Roadmap:** [Roadmap TypeScript](https://roadmap.sh/typescript)  
+**Video PZN:** [Playlist Tutorial TypeScript Dasar](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+TypeScript+Dasar)  
+**Prasyarat:** Node.js & NPM  
 **Progress Modul 3:** `[░░░░░░░░░░] 0%`
 
-- [ ] **3.1. Optimasi Jaringan & Resource**
-  - [ ] Mengoptimalkan Critical Rendering Path
-  - [ ] Minification, Obfuscation & Compression (Brotli, Gzip)
-  - [ ] Caching Strategies (HTTP Caching, Service Workers)
-- [ ] **3.2. Optimasi Asset & DOM**
-  - [ ] Lazy Loading (Images, Components)
-  - [ ] Optimasi Gambar (WebP, AVIF, atribut `srcset`, `sizes`)
-  - [ ] Web Fonts Optimization (Preload, font-display)
-- [ ] **3.3. Metrik Performa (Web Vitals)**
-  - [ ] LCP (Largest Contentful Paint)
-  - [ ] FID (First Input Delay) / INP (Interaction to Next Paint)
-  - [ ] CLS (Cumulative Layout Shift)
+- [ ] **3.1. Basic Data Types & Type System**
+  - [ ] Primitive Data Types (`string`, `number`, `boolean`, `any`, `unknown`)
+  - [ ] Array, Tuple, & Enum Types
+  - [ ] Type Inference vs Explicit Type Annotations
+- [ ] **3.2. Interfaces & Advanced Types**
+  - [ ] Type Alias vs Interface Declaration
+  - [ ] Optional Properties (`?`) & Readonly Properties
+  - [ ] Union Types (`|`) & Intersection Types (`&`)
+- [ ] **3.3. Functions & Generics**
+  - [ ] Function Type Signatures & Default Parameters
+  - [ ] Generic Functions & Generic Interfaces
+  - [ ] Generic Constraints (`extends`)
+- [ ] **3.4. TS Config & Compiler Setup**
+  - [ ] Konfigurasi `tsconfig.json` & Options Utama
+  - [ ] Strict Mode Options (`"strict": true`)
+  - [ ] Process Kompilasi TypeScript ke JavaScript (`tsc`)
 
 ---
 
-## ⚙️ Modul 4: Backend Development Dasar & Menengah
-**Referensi:** [Backend Roadmap](https://roadmap.sh/backend)
+## ⚛️ Modul 4: Frontend Development dengan React.js
+**Referensi Roadmap:** [Roadmap React](https://roadmap.sh/react)  
+**Video PZN:** [Playlist Tutorial ReactJS Dasar](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+ReactJS+Dasar) | [Tutorial React Router](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+React+Router)  
+**Prasyarat:** JS Async `[x]`, Node.js, Vite, TypeScript  
 **Progress Modul 4:** `[░░░░░░░░░░] 0%`
 
-- [ ] **4.1. Internet Lanjutan & OS**
-  - [ ] TCP/UDP, Web Sockets, CORS, Proses & Threads
-- [ ] **4.2. Runtime & Bahasa (Node.js)**
-  - [ ] Node.js core modules (`fs`, `http`, `path`, `events`)
-  - [ ] Framework Backend Node (Express.js / NestJS)
-- [ ] **4.3. Relational Databases (SQL)**
-  - [ ] PostgreSQL atau MySQL
-  - [ ] ACID, Normalisasi Database, Indexing, Transactions, Joins
-- [ ] **4.4. NoSQL Databases**
-  - [ ] Document Database (MongoDB)
-  - [ ] Key-Value Store (Redis)
-- [ ] **4.5. API Design & Authentication**
-  - [ ] RESTful API Principles
-  - [ ] Authentication (Session-based, JWT/Token-based)
-  - [ ] OAuth, SSO, Hashing Passwords (Bcrypt)
+- [ ] **4.1. React Core Architecture**
+  - [ ] Konsep Virtual DOM & JSX Syntax
+  - [ ] Functional Components & Component Composition
+  - [ ] Props Passing & Read-only Props Rule
+- [ ] **4.2. State & Event Handling**
+  - [ ] State Management dengan `useState` Hook
+  - [ ] Event Handling di React Elements
+  - [ ] Controlled Components & Form Handling
+  - [ ] Conditional Rendering & Rendering Lists (`key` prop)
+- [ ] **4.3. React Hooks Mendalam**
+  - [ ] `useEffect`: Managing Side Effects, Data Fetching, & Cleanups
+  - [ ] `useRef`: Direct DOM Access & Mutable Values
+  - [ ] `useContext`: Global State Management tanpa Prop Drilling
+  - [ ] `useMemo` & `useCallback`: Performance Optimization
+- [ ] **4.4. React Router & Data Fetching**
+  - [ ] Setup `BrowserRouter`, `Routes`, & `Route`
+  - [ ] Navigation dengan `Link` & `NavLink`
+  - [ ] Dynamic Routing (`useParams`) & Programmatic Navigation (`useNavigate`)
+  - [ ] Data Fetching dengan Axios / Fetch API & Loading/Error States
 
 ---
 
-## 🐘 Modul 5: Backend Spesifik - PHP
-**Referensi:** [PHP Roadmap](https://roadmap.sh/php)
+## 🗄️ Modul 5: Database System (Relational & NoSQL)
+**Referensi Roadmap:** [Roadmap Databases](https://roadmap.sh/full-stack)  
+**Video PZN:** [Playlist Tutorial MySQL Database](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+MySQL+Database) | [Playlist Tutorial MongoDB Dasar](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+MongoDB+Dasar) | [Tutorial Redis](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+Redis)  
 **Progress Modul 5:** `[░░░░░░░░░░] 0%`
 
-- [ ] **5.1. Dasar-dasar PHP**
-  - [ ] Syntax Dasar, Tipe Data, Variabel, Konstanta
-  - [ ] Control Structures (If, Switch, Match), Loops
-  - [ ] Superglobals (`$_GET`, `$_POST`, `$_SESSION`)
-- [ ] **5.2. Konsep PHP Menengah & OOP**
-  - [ ] Functions, Arrays (Indexed, Associative, Multidimensional)
-  - [ ] Object-Oriented Programming (Classes, Objects, Inheritance)
-  - [ ] Namespaces, Interfaces, Traits, Abstract Classes
-- [ ] **5.3. Ekosistem PHP & Database**
-  - [ ] Dependency Management (Composer)
-  - [ ] PDO & Prepared Statements (Cegah SQL Injection)
-  - [ ] Frameworks: Laravel (Routing, Eloquent ORM, Middleware)
+- [ ] **5.1. Relational Database (MySQL / PostgreSQL)**
+  - [ ] Konsep Database Relasional: Tabel, Primary Key, & Foreign Key
+  - [ ] DDL Commands (`CREATE`, `ALTER`, `DROP`)
+  - [ ] DML Commands (`SELECT`, `INSERT`, `UPDATE`, `DELETE`)
+  - [ ] Relasi & JOIN Operations (`INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`)
+  - [ ] Aggregate Functions, `GROUP BY`, & `HAVING`
+  - [ ] Indexing, Database Transactions (`COMMIT`, `ROLLBACK`), & Normalisasi (1NF-3NF)
+- [ ] **5.2. NoSQL Database (MongoDB)**
+  - [ ] Document Database Architecture & Collection Concepts
+  - [ ] CRUD Operations (`insertOne`, `find`, `updateOne`, `deleteOne`)
+  - [ ] Query Filters & Operators
+- [ ] **5.3. In-Memory Store & Caching (Redis)**
+  - [ ] Key-Value Store Operations
+  - [ ] Data Expiration (TTL - Time To Live)
+  - [ ] Pola Caching Sederhana untuk Performa Data
 
 ---
 
-## 🛡️ Modul 6: Backend Performance & API Security
-**Referensi:** [Backend Performance](https://roadmap.sh/backend-performance-best-practices) | [API Security](https://roadmap.sh/api-security-best-practices)
+## ⚡ Modul 6: Backend RESTful API & ORM
+**Referensi Roadmap:** [Roadmap Backend](https://roadmap.sh/backend)  
+**Video PZN:** [Playlist Belajar RESTful API](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Belajar+RESTful+API) | [Tutorial Express.js](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+NodeJS+Express+JS) | [Tutorial Prisma ORM](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Prisma+ORM)  
+**Prasyarat:** Node.js, TypeScript, Database  
 **Progress Modul 6:** `[░░░░░░░░░░] 0%`
 
-- [ ] **6.1. API Security Best Practices**
-  - [ ] Enkripsi (HTTPS Everywhere, TLS)
-  - [ ] Rate Limiting & Throttling
-  - [ ] Input Validation & Sanitization (Cegah XSS, SQLi, RCE)
-  - [ ] Implementasi CORS & Security Headers (Helmet, Content-Security-Policy)
-  - [ ] Prinsip Least Privilege
-- [ ] **6.2. Backend Performance Optimization**
-  - [ ] Database Query Optimization (N+1 Problem, Explain Query)
-  - [ ] Connection Pooling
-  - [ ] Caching (Application level Redis, Database level)
-  - [ ] Asynchronous Processing & Background Jobs (Message Queues: RabbitMQ)
-  - [ ] Load Balancing (Nginx, HAProxy) & Horizontal Scaling
+- [ ] **6.1. REST API Standards & Principles**
+  - [ ] HTTP Methods (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`)
+  - [ ] HTTP Status Codes (200, 201, 400, 401, 403, 404, 500)
+  - [ ] Request & Response Standard Headers & Body Contract
+- [ ] **6.2. Express.js Framework**
+  - [ ] Express Server Setup & Port Binding
+  - [ ] Express Router & Routing Modular
+  - [ ] Middleware Architecture (Built-in, Custom Error Handling, CORS)
+- [ ] **6.3. Database Integration (Prisma ORM)**
+  - [ ] Modeling Schema di `schema.prisma`
+  - [ ] Database Migration (`npx prisma migrate`)
+  - [ ] Prisma Client Query Operations & Handling Relations
+- [ ] **6.4. Authentication & API Security**
+  - [ ] Hashing Password dengan Bcrypt
+  - [ ] JWT (JSON Web Token) Auth & Verification Middleware
+  - [ ] Input Validation dengan Schema Validator (Joi / Zod)
 
 ---
 
-## 📱 Modul 7: React Native (Mobile App Development)
-**Referensi:** [React Native Roadmap](https://roadmap.sh/react-native)
+## 🐳 Modul 7: DevOps, Containerization & Deployment
+**Referensi Roadmap:** [Roadmap DevOps](https://roadmap.sh/devops)  
+**Video PZN:** [Playlist Belajar Docker untuk Pemula](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Belajar+Docker+untuk+Pemula) | [Tutorial Nginx](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+Nginx)  
+**Prasyarat:** Application Frontend & Backend REST API  
 **Progress Modul 7:** `[░░░░░░░░░░] 0%`
 
-- [ ] **7.1. Dasar React Native**
-  - [ ] Perbedaan dengan React JS, Metro Bundler
-  - [ ] Core Components (View, Text, Image, ScrollView, FlatList)
-- [ ] **7.2. Styling & Layouting**
-  - [ ] Flexbox untuk Mobile, StyleSheet API
-- [ ] **7.3. Navigasi Mobile**
-  - [ ] React Navigation (Stack, Bottom Tabs, Drawer)
-- [ ] **7.4. Data Management & Native Features**
-  - [ ] Integrasi API di Mobile (Fetch / Axios)
-  - [ ] Local Storage (Async Storage / MMKV)
-  - [ ] Native Device Features (Kamera, Lokasi, Notifikasi)
-- [ ] **7.5. Deployment (Release)**
-  - [ ] Build & Sign APK/AAB (Android Play Store)
-  - [ ] Build IPA (iOS App Store)
+- [ ] **7.1. Docker Fundamentals**
+  - [ ] Konsep Kontainerisasi vs Virtual Machine
+  - [ ] Perintah Dasar Docker (`docker run`, `docker ps`, `docker stop`, `docker rm`)
+  - [ ] Docker Image Management (`docker build`, `docker images`, `docker pull`)
+- [ ] **7.2. Multi-Container & Dockerfile**
+  - [ ] Membuat Custom `Dockerfile` (Node.js & React)
+  - [ ] Multi-stage Builds untuk Penghematan Ukuran Image
+  - [ ] Orchestration dengan `docker-compose.yml` (App + Backend + DB)
+- [ ] **7.3. Nginx & Production Deployment**
+  - [ ] Konfigurasi Nginx Server Block
+  - [ ] Reverse Proxy Setup ke Node.js Backend App
+  - [ ] Hosting Build Production React (`/dist`) melalui Nginx
 
 ---
 
-## 🔍 Modul 8: Code Review & Software Engineering Best Practices
-**Referensi:** [Code Review](https://roadmap.sh/code-review) | [Code Review Best Practices](https://roadmap.sh/code-review-best-practices)
-**Progress Modul 8:** `[░░░░░░░░░░] 0%`
+## 📝 Catatan & Journal Belajar
+*Gunakan bagian ini untuk mencatat ringkasan per modul atau kendala yang dihadapi saat praktik.*
 
-- [ ] **8.1. Panduan untuk Reviewer (Code Reviewer)**
-  - [ ] Memahami Konteks, PR Description, dan Business Logic
-  - [ ] Memberikan feedback yang objektif, konstruktif, dan sopan
-  - [ ] Memeriksa Keamanan, Performa, Edge Cases, dan Test Coverage
-- [ ] **8.2. Panduan untuk Reviewee (Author)**
-  - [ ] Membuat Pull Request (PR) yang kecil dan fokus (Atomic commits)
-  - [ ] Menulis deskripsi PR yang jelas (Apa yang diubah dan mengapa?)
-  - [ ] Menerima feedback (No ego) dan berdiskusi mencari solusi terbaik
-- [ ] **8.3. Best Practices Global & Clean Code**
-  - [ ] Prinsip Desain: SOLID, DRY, KISS, YAGNI
-  - [ ] Naming Conventions yang bermakna dan konsisten
-  - [ ] Refactoring berkelanjutan tanpa mengubah output behavior (TDD)
+- **Catatan Modul 1:** ...
+- **Catatan Modul 2:** ...
+- **Catatan Modul 3:** ...
 
----
-
-## 📝 Catatan Belajar & Project Ide
-*Gunakan area ini untuk mencatat ide proyek atau ringkasan pribadi Anda selama belajar.*
-
-- **Proyek 1 (Frontend):** ...
-- **Proyek 2 (Backend REST API):** ...
-- **Proyek 3 (Mobile React Native):** ...
-- **Proyek 4 (Full-stack MERN/PHP):** ...
-
-> **Tip:** Jangan terjebak dalam "Tutorial Hell". Setelah mempelajari 1 modul, buatlah sesuatu darinya (aplikasi kecil, skrip, atau clone website). Konsistensi lebih penting daripada intensitas!
+> 💡 **Tips Belajar Programmer Zaman Now:**  
+> Selalu buat project kecil setelah menyelesaikan 1 modul playlist untuk melatih pemahaman (*hands-on practice*).
