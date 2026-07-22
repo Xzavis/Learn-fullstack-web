@@ -127,8 +127,8 @@ Learn-fullstack-web/
 **Progress Modul 2:** `[░░░░░░░░░░] 0%`
 
 - [ ] **2.1. Node.js Core Basics**
-  - [ ] Pengenalan V8 Engine & Architecture Node.js
-  - [ ] Global Objects (`process`, `console`, `Buffer`)
+  - [x] Pengenalan V8 Engine & Architecture Node.js
+  - [] Global Objects (`process`, `console`, `Buffer`)
   - [ ] Module System: CommonJS (`require`) vs ES Modules (`import/export`)
   - [ ] Core Modules (`fs` File System, `path`, `events`, `os`, `http`)
 - [ ] **2.2. Node Package Manager (NPM)**
