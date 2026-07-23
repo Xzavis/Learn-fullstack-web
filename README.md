@@ -130,7 +130,7 @@ Learn-fullstack-web/
   - [x] Pengenalan V8 Engine & Architecture Node.js
   - [ ] Global Objects (`process`, `console`, `Buffer`) (Sedang berjalan)
   - [ ] Module System: CommonJS (`require`) vs ES Modules (`import/export`) (Sedang berjalan)
-  - [ ] Core Modules (`fs` File System, `path`, `events`, `os`, `http`) (Baru selesai: os, path)
+  - [ ] Core Modules (`fs` File System, `path`, `events`, `os`, `http`, `dns`) (Baru selesai: os, path, fs, dns, debugger)
 - [ ] **2.2. Node Package Manager (NPM)**
   - [ ] Inisialisasi Project (`npm init`) & File `package.json`
   - [ ] Local vs Global Package Installation
