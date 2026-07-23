@@ -9,7 +9,7 @@ Silabus ini dilengkapi dengan *Progress Tracking Bar*, tautan langsung ke video 
 ## 📊 Progress Keseluruhan (Global Progress)
 
 **Modul Selesai:** 1 / 7 Modul  
-**Progress Keseluruhan:** `[█░░░░░░░░░] 14.3%`
+**Progress Keseluruhan:** `[██░░░░░░░░] 19.4%`
 
 *(Update status progress bar di atas secara berkala seiring dengan penyelesaian modul Anda).*
 
@@ -124,13 +124,13 @@ Learn-fullstack-web/
 **Referensi Roadmap:** [Roadmap Node.js](https://roadmap.sh/nodejs)  
 **Video PZN:** [Playlist Tutorial Node.js Dasar](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+NodeJS+Dasar) | [Playlist Tutorial NPM](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+NodeJS+NPM) | [Video Tutorial Vite](https://www.youtube.com/results?search_query=Programmer+Zaman+Now+Tutorial+Vite)  
 **Prasyarat:** JavaScript Async `[x]`  
-**Progress Modul 2:** `[█░░░░░░░░░] 8%`
+**Progress Modul 2:** `[███░░░░░░░] 36%`
 
-- [ ] **2.1. Node.js Core Basics**
+- [x] **2.1. Node.js Core Basics**
   - [x] Pengenalan V8 Engine & Architecture Node.js
-  - [ ] Global Objects (`process`, `console`, `Buffer`)
-  - [ ] Module System: CommonJS (`require`) vs ES Modules (`import/export`)
-  - [ ] Core Modules (`fs` File System, `path`, `events`, `os`, `http`)
+  - [x] Global Objects (`process`, `console`, `Buffer`)
+  - [x] Module System: CommonJS (`require`) vs ES Modules (`import/export`)
+  - [x] Core Modules (`fs` File System, `path`, `events`, `os`, `http`)
 - [ ] **2.2. Node Package Manager (NPM)**
   - [ ] Inisialisasi Project (`npm init`) & File `package.json`
   - [ ] Local vs Global Package Installation
